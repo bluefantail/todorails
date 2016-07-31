@@ -1,0 +1,12 @@
+<h1>Desk</h1>
+<%= form_for :note, url: notes_path do |f| %>
+	<%= f.text_field :title, :placeholder => "Note Title" %>
+	<%= f.text_field :description, :placeholder => "Description" %>
+	<%= f.datetime_select :due %>
+	<%= f.submit %>
+<% end %>
+<% if !@notes.blank? %>
+	<%= render @notes %>
+<% else %>
+	The desk is empty.
+<% end %>

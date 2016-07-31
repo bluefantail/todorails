@@ -1,0 +1,7 @@
+<div>
+	<span><%= note.title %></span>
+	<span><%= note.description %></span>
+	<span><%= note.due %></span>
+	<span><%= link_to 'Burn', note_path(note),
+              method: :delete %></span>
+</div>
