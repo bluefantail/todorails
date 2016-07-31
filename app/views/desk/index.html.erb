@@ -3,7 +3,7 @@
 	<%= f.text_field :title, :placeholder => "Note Title" %>
 	<%= f.text_field :description, :placeholder => "Description" %>
 	<%= f.datetime_select :due %>
-	<%= f.submit %>
+	<%= f.submit 'Write' %>
 <% end %>
 <% if !@notes.blank? %>
 	<%= render @notes %>
